@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Annotorious | Development</title>
+    <style>
+      html, body {
+        padding:20px;
+        margin:0px;
+      }
+      
+      .r6o-editor {
+        font-family:'Lato', sans-serif;
+        font-size:17px;
+        line-height:27px;
+      }
+    </style>
+  <script type="text/javascript" src="annotorious-2.0.0-alpha.min.js"></script></head>
+  <body>
+    <div id="content">
+      <img id="hallstatt" src="640px-Hallstatt.jpg">
+    </div>
+    <script>
+      (function() {
+        var anno = Annotorious.init({
+          image: 'hallstatt'
+        });
+
+        anno.loadAnnotations('annotations.w3c.json');
+      })()
+    </script>
+  </body>
+</html>

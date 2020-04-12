@@ -24,7 +24,7 @@
         color:#3f3f3f;
       }
     </style>
-  <script type="text/javascript" src="annotorious-2.0.1-alpha.min.js"></script></head>
+  <script type="text/javascript" src="annotorious-2.0.2-alpha.min.js"></script></head>
   <body>
     <div id="content">      
       <img id="hallstatt" src="640px-Hallstatt.jpg">
@@ -46,14 +46,6 @@
 
         anno.on('updateAnnotation', function(annotation, previous) {
           console.log('updated', previous, 'with', annotation);
-        });
-
-        anno.on('mouseEnterAnnotation', function(annotation, evt) {
-          console.log('enter', annotation);
-        });
-
-        anno.on('mouseLeaveAnnotation', function(annotation, evt) {
-          console.log('leave', annotation);
         });
 
         anno.loadAnnotations('annotations.w3c.json');

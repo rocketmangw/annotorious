@@ -9,7 +9,7 @@
         padding:20px;
         margin:0px;
       }
-
+      
       .r6o-editor {
         font-family:'Lato', sans-serif;
         font-size:17px;
@@ -25,9 +25,9 @@
         color:#3f3f3f;
       }
     </style>
-  <script type="text/javascript" src="annotorious-2.0.2-alpha.min.js"></script></head>
+  <script type="text/javascript" src="annotorious.min.js"></script></head>
   <body>
-    <div id="content">
+    <div id="content">      
       <img id="hallstatt" src="640px-Hallstatt.jpg">
       <p class="caption">
         Sample image source: <a href="http://commons.wikimedia.org/wiki/File:Hallstatt_300.jpg">Hallstatt,
@@ -40,7 +40,7 @@
         var anno = Annotorious.init({
           image: 'hallstatt'
         });
-
+        
         anno.on('selectAnnotation', function(annotation) {
           console.log('selected', annotation);
         });
